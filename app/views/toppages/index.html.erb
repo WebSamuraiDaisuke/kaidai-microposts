@@ -1,0 +1,10 @@
+<% if logged_in? %>
+<p>Logged in user is <%= current_user.name %></p>
+<% else %>
+<div class="jumbotron center">
+  <div class="text-center">
+    <h1>Welcome to the Microposts</h1>
+    <%= link_to 'Sign Up Now', new_user_path, class: 'btn btn-lg btn-primary' %>
+  </div>
+</div>
+<% end %>
