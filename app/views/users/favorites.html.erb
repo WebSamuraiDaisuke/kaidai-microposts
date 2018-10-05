@@ -18,10 +18,6 @@
       <li class="<%= 'active' if current_page?(likes_user_path(@user)) %>"><%= link_to likes_user_path(@user) do %>Favorites <span class="badge"><%= @count_favorites %></span><% end %></li>
     </ul>
     <%= render 'microposts/microposts', microposts: @microposts %>
-  </div>
-</div>
-
-    </ul>
-    <%= render 'microposts/microposts', microposts: @microposts %>
+    <%#= render 'users', users: @favorite %>
   </div>
 </div>
