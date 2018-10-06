@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     member do
       get :followings
       get :followers
-      get :likes, to: 'users#favorite_microposts' 
+      get :likes 
     end
     collection do
       get :search
